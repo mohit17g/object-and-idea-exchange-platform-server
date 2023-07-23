@@ -39,6 +39,8 @@ const signupController = async (req, res) => {
       );
     }
 
+
+
     if (password != cpassword) {
       //   return res.status(422).json({ error: "Password are not matching" });
       return res.send(error(422, "Password are not matching"));
